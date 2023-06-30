@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "더쿠 말머리 제한",
+    "version": "1.0",
+    "options_page": "options.html",
+    "description": "더쿠내에서 게시글마다 허용 말머리를 설정해서 말머리 즐겨찾기에서 허용 말머리 이외에는 선택이 안되도록한다. ",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://theqoo.net/*"
+            ],
+            "js": [
+                "content_script.js"
+            ]
+        }
+    ]
+}
